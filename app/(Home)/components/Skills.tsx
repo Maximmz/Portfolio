@@ -50,7 +50,7 @@ export const languages = [
 export default function Skills() {
   return (
     <section className="flex flex-col justify-center py-5 mt-20">
-      <h1 className="text-5xl font-extrabold flex justify-center items-center text-zinc-200 py-2 pb-1 mt-5 lg:mt-0 ">My Skills</h1>
+      <h1 className="text-5xl font-extrabold flex justify-center items-center text-zinc-700 dark:text-zinc-200 py-2 pb-1 mt-5 lg:mt-0 ">My Skills</h1>
       <div className="max-w-5xl mx-auto px-8">
       <HoverEffect items={languages} />
     </div>

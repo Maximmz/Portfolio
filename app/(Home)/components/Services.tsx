@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <section className="py-0 pt-2 md:pt-0">
     <div className="rounded-lg flex flex-col items-center pt-10 gap-y-10">
-    <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl py-2 text-zinc-200">
+    <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl py-2 text-zinc-700 dark:text-zinc-200">
         My Services
       </h1>
   <div className="flex flex-col xl:flex-row justify-center items-center pb-20">

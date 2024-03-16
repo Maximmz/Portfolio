@@ -9,7 +9,7 @@ const ProjectsDisplay = () => {
   return (
     <section>
       <div className="flex flex-col items-center lg:gap-y-0 lg:pt-0 lg:pb-0 ">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl py-2 text-zinc-200 pb-0">
+        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl py-2 text-zinc-700 dark:text-zinc-200 pb-0">
           My Projects
         </h1>
         <div className="mt-8">
