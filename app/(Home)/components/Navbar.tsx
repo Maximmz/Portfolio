@@ -18,7 +18,7 @@ export default function Navbar() {
         }
     ]
   return (
-    <section className="bg-slate-400 dark:bg-zinc-900">
+    <section className="bg-zinc-600 dark:bg-zinc-900">
     <nav className="max-w-[1500px] py-10 flex justify-between">
         <h1 className="ps-2 lg:ps-40 pt-10 md:pt-0 mt-3 lg:mt-0 text-lg sm:text-2xl md:text-4xl font-bold"> 
         <div className="mt-4 flex flex-row">

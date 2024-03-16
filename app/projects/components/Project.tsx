@@ -108,8 +108,8 @@ export default function Project() {
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10 items-center">
-             <Link href={`/projects/${item.slug}`} className="cursor-default">
-             <h4 ref={refs[item.badge] as React.MutableRefObject<HTMLHeadingElement>} className=" bg-zinc-700 text-zinc-200 font-bold border-4 rounded-full text-xl w-full h-16 flex justify-center pt-3 px-4 py-1 mb-4 cursor-default hover:cursor-default">
+             <Link href={`/projects/${item.slug}`}>
+             <h4 ref={refs[item.badge] as React.MutableRefObject<HTMLHeadingElement>} className=" bg-zinc-700 text-zinc-200 font-bold border-4 rounded-full text-xl w-full h-16 flex justify-center pt-3 px-4 py-1 mb-4">
               {item.badge}
             </h4>
              </Link>
@@ -124,7 +124,7 @@ export default function Project() {
                               <Image
                                 src={item.image}
                                 alt="blog thumbnail"
-                                height="1000"
+                                height="500"
                                 width="1000"
                                 className="rounded-lg object-cover opacity-50"
                               />

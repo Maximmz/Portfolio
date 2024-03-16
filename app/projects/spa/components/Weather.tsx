@@ -47,7 +47,7 @@ export default function Weather() {
                         src={getImageForIndex(index)}
                         alt={`Image ${index + 1}`}
                         width={1000}
-                        height={1000}
+                        height={500}
                         loading="lazy"
                       />
                     </CardContent>

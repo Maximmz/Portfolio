@@ -34,7 +34,7 @@ export default function Cis() {
   return (
     <div className="mx-auto px-4 md:px-8 lg:px-16 max-w-screen-lg">
      
-        <a target="_blank" className="flex justify-center text-amber-300 scroll-m-20 text-2xl pb-0 font-extrabold tracking-tight lg:text-5xl lg:pb-4 underline underline-offset-8" href="https://github.com/Maximmz/CISPL-landing-clone" rel="https://github.com/Maximmz/CISPL-landing-clone">
+        <a target="_blank" className="flex justify-center text-amber-300 scroll-m-20 text-2xl pb-0 pt-2 font-extrabold tracking-tight lg:text-5xl lg:pb-4 underline underline-offset-8" href="https://github.com/Maximmz/CISPL-landing-clone" rel="https://github.com/Maximmz/CISPL-landing-clone">
         <span>CIS</span> <span className="ps-2"><FaGithub /></span>
         </a>
         
@@ -51,7 +51,7 @@ export default function Cis() {
                         src={getImageForIndex(index)}
                         alt={`Image ${index + 1}`}
                         width={1000}
-                        height={1000}
+                        height={500}
                         loading="lazy"
                       />
                     </CardContent>
