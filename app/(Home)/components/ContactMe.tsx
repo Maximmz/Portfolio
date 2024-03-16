@@ -16,7 +16,7 @@ const ContactMe = () => {
               <FaEnvelope className="text-lg md:text-2xl" />
               <div>
                 <h3 className="text-sm md:text-lg font-semibold">Gmail</h3>
-                <p className="text-sm md:text-lg flex relative">mazinjasim066<p className="absolute ps-24 md:ps-32">@gmail.com</p></p>
+                <div className="text-sm md:text-lg flex relative">mazinjasim066<p className="absolute ps-24 md:ps-32">@gmail.com</p></div>
               </div>
             </div>
             </a>
