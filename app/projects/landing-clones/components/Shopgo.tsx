@@ -73,7 +73,7 @@ export default function NextCar() {
       </div>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
       The SHOPGO Landing Page Clone is an impressive replica of a popular clothing e-commerce website. 
-        Developed using HTML and Bootstrap CSS, this clone mirrors the stylish and dynamic design of SHOPGO's original landing page. 
+        Developed using HTML and Bootstrap CSS, this clone mirrors the stylish and dynamic design of SHOPGO&apos;s original landing page. 
         Featuring stunning visuals, and captivating product displays, the clone offers users an immersive shopping experience akin to the real website. 
         With its mobile-responsive layout and seamless functionality, users can easily browse through the latest fashion trends.
          Whether accessing the website on a desktop or mobile device, users are treated to a visually engaging and user-friendly interface that enhances their online shopping journey.

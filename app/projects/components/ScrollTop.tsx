@@ -2,7 +2,7 @@
 import React from 'react'
 import { Button } from './ui/moving-border'
 
-export default function () {
+export default function Scroll() {
 
     const scrollToTop = () => {
         window.scrollTo({

@@ -97,7 +97,7 @@ export default function Project() {
         Clones
       </Button>
       <Button borderRadius="1.75rem" className="bg-amber-300 text-black text-xl font-bold border-4 border-neutral-200 dark:border-zinc-800" onClick={() => scrollToRef(refs["Single-Page-Applications"])} >
-        SPA's
+        SPA&apos;s
       </Button>
       </div>
       <hr className="h-px mt-4 mb-8 bg-amber-300 border-0 max-w-full"></hr>
@@ -226,12 +226,12 @@ const dummyContent = [
     description: (
       <div>
         <p>
-         Single Page Applications such as "Weather App", "Date Filtered Expenses"
-         and "Course Goal List" making use of different languages, such as 
+         Single Page Applications such as &quot;Weather App&quot;, &quot;Date Filtered Expenses&quot;
+         and &quot;Course Goal List&quot; making use of different languages, such as 
          Weather App making use of Next.js and Tailwind, while Date Filtered 
          Expenses and Course Goal List make use of React.js. DFE and CGL are pretty
          outdated (Made in 2021 according to Github repository) so only repository
-         is provided for the code. Currently different SPA's are also being made.
+         is provided for the code. Currently different SPA&apos;s are also being made.
         </p>
       </div>
     ),

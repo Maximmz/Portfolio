@@ -79,7 +79,7 @@ export default function Cis() {
       The CISPL Landing Page Clone is a meticulous reproduction of the website for Computer Information Systems Pvt. Ltd. 
         (CISPL), a leading provider of computer-based services.
          Crafted using HTML and Bootstrap CSS, this clone faithfully recreates the sleek and professional design of the original website. 
-         With a focus on simplicity and clarity, the clone showcases CISPL's services, expertise, and commitment to excellence. 
+         With a focus on simplicity and clarity, the clone showcases CISPL&apos;s services, expertise, and commitment to excellence. 
          Every element of the landing page, from the navigation menu to the footer, has been carefully crafted to ensure seamless user experience across devices. 
          Moreover, special attention has been given to making the website fully responsive, ensuring optimal viewing and interaction on mobile devices as well.
     </p>

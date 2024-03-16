@@ -24,7 +24,7 @@ export default function Services() {
     <div className="px-6 py-4">
     <div className="font-bold  flex justify-center text-lg md:text-3xl mb-2 text-black">Frontend Development</div>
     <p className="text-black text-base">
-    Unlock visually stunning and responsive websites that captivate and engage. Specializing in modern technologies like HTML5, CSS3, and JavaScript frameworks, I create seamless user experiences that are not only beautiful but also accessible and user-friendly across all devices. Let's bring your ideas to life with cutting-edge frontend solutions.
+    Unlock visually stunning and responsive websites that captivate and engage. Specializing in modern technologies like HTML5, CSS3, and JavaScript frameworks, I create seamless user experiences that are not only beautiful but also accessible and user-friendly across all devices. Let&apos;s bring your ideas to life with cutting-edge frontend solutions.
     </p>
   </div>
 
@@ -43,7 +43,7 @@ export default function Services() {
   <div className="px-6 py-4">
     <div className="font-bold flex justify-center text-lg md:text-3xl mb-2 text-black">Backend Development</div>
     <p className="text-black text-base">
-    Elevate your applications with efficient and scalable backend solutions centered around RESTful API development. Utilizing the latest server technologies, I specialize in crafting APIs that facilitate seamless communication between your frontend and database. My approach prioritizes clean, maintainable code, setting a solid foundation for your application's functionality and future growth.
+    Elevate your applications with efficient and scalable backend solutions centered around RESTful API development. Utilizing the latest server technologies, I specialize in crafting APIs that facilitate seamless communication between your frontend and database. My approach prioritizes clean, maintainable code, setting a solid foundation for your application&apos;s functionality and future growth.
     </p>
   </div>
 </div>

@@ -74,7 +74,7 @@ export default function Weather() {
       <p className="leading-7 [&:not(:first-child)]:mt-6">
       Discover the Weather App, a sleek fusion of Next.js and Tailwind CSS, offering instantaneous access to weather forecasts for any city. 
       With its minimalist design and intuitive search bar, users can effortlessly retrieve meteorological data, 
-      powered by Next.js's speed and Tailwind CSS's elegance. Whether planning a trip or staying informed, 
+      powered by Next.js&apos;s speed and Tailwind CSS&apos;s elegance. Whether planning a trip or staying informed, 
       this app provides comprehensive weather insights at your fingertips, delivering timely updates and empowering informed decision-making. 
       Join us in embracing the future of weather forecasting with style and efficiency.
     </p>
