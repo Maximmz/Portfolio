@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Mazin Jasim Website Portfolio 
+
+
+This is a [Next.js](https://nextjs.org/) Tailwind and TypeScript project.
 
 ## Getting Started
 
