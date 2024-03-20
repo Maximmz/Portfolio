@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function HeroCom() {
   return (
-    <div className="h-[30rem] sm:h-[25rem] w-full rounded-md flex md:items-center md:justify-center bg-zinc-700 antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="h-[35rem] sm:h-[25rem] w-full rounded-md flex md:items-center md:justify-center bg-zinc-700 antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
       />
