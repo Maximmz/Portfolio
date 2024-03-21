@@ -35,7 +35,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-zinc-700/[0.96] block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-zinc-200 dark:bg-zinc-700/[0.96] block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 100 }}
                 animate={{
@@ -110,7 +110,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "text-zinc-800 leading-7",
+        "text-zinc-800 leading-7 ps-1",
         className
       )}
     >

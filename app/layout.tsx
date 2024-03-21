@@ -10,8 +10,8 @@ const openSans = Open_Sans({
 
 
 export const metadata: Metadata = {
-  title: "Mazin Jasim",
-  description: "Website Portfolio",
+  title: "Mazin Jasim Portfolio",
+  description: "Mazin Jasim' - Full Stack Web Developer Portfolio",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
       <ThemeProvider
           enableSystem
           attribute='class'
-          defaultTheme='system'
+          defaultTheme='dark'
           disableTransitionOnChange
           themes={['light', 'dark']}
           >

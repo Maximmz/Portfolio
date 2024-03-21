@@ -41,7 +41,7 @@ export const languages = [
   {
     title: "Python",
     description:
-      "General PL",
+      "GPL",
     link: "https://www.python.org/",
     image: "https://res.cloudinary.com/dvvcrxzud/image/upload/v1709814503/Python_xwsnlt.png",
   },
@@ -65,7 +65,7 @@ export default function Skills() {
   return (
     <section className="flex flex-col justify-center py-5 mt-20">
       <h1 className="text-5xl font-extrabold flex justify-center items-center text-zinc-700 dark:text-zinc-200 py-2 pb-1 mt-5 lg:mt-0 ">My Skills</h1>
-      <div className="max-w-5xl mx-auto px-8">
+      <div className="max-w-full max-h-full mx-auto px-2">
       <HoverEffect items={languages} />
     </div>
 

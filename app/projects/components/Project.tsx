@@ -18,7 +18,7 @@ const languages = [
     id: 1,
     name: "Next.js",
     image:
-      "https://res.cloudinary.com/dvvcrxzud/image/upload/v1709814502/Next_rxefce.png",
+      "https://res.cloudinary.com/dvvcrxzud/image/upload/v1710521223/Nextjs_heccfw.png",
   },
   {
     id: 2,
@@ -126,7 +126,7 @@ export default function Project() {
                                 alt="blog thumbnail"
                                 height="500"
                                 width="1000"
-                                className="rounded-lg object-cover opacity-50"
+                                className="rounded-lg object-cover opacity-70 dark:opacity-50"
                               />
                             </div>
             
