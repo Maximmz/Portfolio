@@ -8,13 +8,16 @@ const openSans = Open_Sans({
   display: 'swap',
 })
 
+const customMetadata = {
+  "google-site-verification": "6k0xE47wgmk_d1TWfoTpS8u-gA3HippZjIpXy1zM6UQ"
+};
 
-export const metadata: Metadata = {
+export const metadata: Metadata & typeof customMetadata = {
   title: "Mazin Jasim Portfolio",
   description: "Mazin Jasim' - Full Stack Web Developer Portfolio",
-  
+  ...customMetadata
 };
-<meta name="google-site-verification" content="6k0xE47wgmk_d1TWfoTpS8u-gA3HippZjIpXy1zM6UQ" />
+
 
 export default function RootLayout({
   children,
@@ -23,6 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+        {/* Add meta tag here */}
+        <meta name="google-site-verification" content={metadata["google-site-verification"]} />
+      </head>
       <body className={openSans.className}>
       
       <ThemeProvider
