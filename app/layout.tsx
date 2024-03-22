@@ -12,7 +12,9 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Mazin Jasim Portfolio",
   description: "Mazin Jasim' - Full Stack Web Developer Portfolio",
+  
 };
+<meta name="google-site-verification" content="6k0xE47wgmk_d1TWfoTpS8u-gA3HippZjIpXy1zM6UQ" />
 
 export default function RootLayout({
   children,
