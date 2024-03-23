@@ -34,6 +34,9 @@ const config = {
       },
     },
     extend: {
+      blur: {
+        xs: '2px',
+      },
       animation: {
         spotlight: "spotlight 6s ease 0.5s 1 forwards",
         "accordion-down": "accordion-down 0.2s ease-out",

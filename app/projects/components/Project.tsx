@@ -126,7 +126,7 @@ export default function Project() {
                                 alt="blog thumbnail"
                                 height="500"
                                 width="1000"
-                                className="rounded-lg object-cover opacity-70 dark:opacity-50"
+                                className="rounded-lg hover:blur-xs object-cover opacity-70 dark:opacity-50"
                               />
                             </div>
             
