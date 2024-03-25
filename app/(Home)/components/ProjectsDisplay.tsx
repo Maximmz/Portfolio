@@ -93,7 +93,7 @@ const ProjectsDisplay = () => {
           </Link>
 
       </div>
-      <div className="[perspective:1000px] pb-96 relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start mt-10">
+      <div className="[perspective:1000px] pb-72 md:pb-80 lg:pb-96 relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start mt-10">
       <Tabs tabs={tabs} />
     </div>
       
