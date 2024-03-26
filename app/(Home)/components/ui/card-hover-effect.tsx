@@ -1,8 +1,25 @@
+// Import necessary modules
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
+// Define animation variants
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.1 * index
+    }
+  })
+};
+
+// Define HoverEffect component
 export const HoverEffect = ({
   items,
   className,
@@ -15,7 +32,8 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  // State to track hovered index
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div
@@ -26,8 +44,7 @@ export const HoverEffect = ({
     >
       {items.map((item, idx) => (
         <div
-          
-          key={item?.link}
+          key={item.link}
           className="relative group block p-2 h-full max-w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -37,29 +54,41 @@ export const HoverEffect = ({
               <motion.span
                 className="absolute inset-0 h-full w-full bg-zinc-200 dark:bg-zinc-700/[0.96] block rounded-3xl"
                 layoutId="hoverBackground"
-                initial={{ opacity: 100 }}
+                initial={{ opacity: 0 }}
                 animate={{
                   opacity: 1,
-                  transition: { duration: 0.05 },
+                  transition: { duration: 0.3 }, // Adjust duration as needed
                 }}
                 exit={{
                   opacity: 0,
-                  transition: { duration: 0.05, delay: 0.2 },
+                  transition: { duration: 0.3 }, // Adjust duration as needed
                 }}
               />
             )}
           </AnimatePresence>
-          <Card image={item.image}>
-          <CardTitle>{item.title}</CardTitle>
-            
-            <CardDescription>{item.description}</CardDescription>
-          </Card>
+          <motion.li
+            className="list-none"
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once:true
+            }}
+            key={idx}
+            custom={idx} // Use idx as the key
+          >
+            <Card image={item.image}>
+              <CardTitle>{item.title}</CardTitle>
+              <CardDescription>{item.description}</CardDescription>
+            </Card>
+          </motion.li>
         </div>
       ))}
     </div>
   );
 };
 
+// Define Card component
 export const Card = ({
   className,
   children,
@@ -76,23 +105,21 @@ export const Card = ({
         className
       )}
     >
-        <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
         {image && <img src={image} className="w-12 h-12 rounded-full mr-4" alt="Avatar" />}
-        
-      <div className="relative z-50">
-        <div>{children}</div>
-        </div>
+        <div className="relative z-50">{children}</div>
       </div>
     </div>
   );
 };
+
+// Define CardTitle component
 export const CardTitle = ({
   className,
   children,
 }: {
   className?: string;
   children: React.ReactNode;
-  isPython?: boolean;
 }) => {
   return (
     <h4 className={cn("mt-4 pb-1 scroll-m-20 text-black text-2xl font-semibold tracking-tight", className)}>
@@ -100,6 +127,8 @@ export const CardTitle = ({
     </h4>
   );
 };
+
+// Define CardDescription component
 export const CardDescription = ({
   className,
   children,
