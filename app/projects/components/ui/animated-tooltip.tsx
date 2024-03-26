@@ -23,7 +23,7 @@ export const AnimatedTooltip = ({
   const x = useMotionValue(0); // going to set this value on mouse move
   // rotate the tooltip
   const rotate = useSpring(
-    useTransform(x, [-100, 100], [-45, 45]),
+    useTransform(x, [-100, 100], [-70, 70]),
     springConfig
   );
   // translate the tooltip
@@ -48,9 +48,9 @@ export const AnimatedTooltip = ({
           <AnimatePresence mode="wait">
             {hoveredIndex === item.id && (
               <motion.div
-                initial={{ opacity: 0, y: 20, scale: 0.6 }}
+                initial={{ opacity: 0, y: 20, scale: 0.2 }}
                 animate={{
-                  opacity: 1,
+                  opacity: 10,
                   y: 0,
                   scale: 1,
                   transition: {
@@ -81,7 +81,7 @@ export const AnimatedTooltip = ({
             width={100}
             src={item.image}
             alt={item.name}
-            className="object-cover !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white dark:border-zinc-800 relative transition duration-500"
+            className="object-cover !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-110 group-hover:z-40 border-white dark:border-zinc-800 relative transition duration-500"
           />
         </div>
       ))}

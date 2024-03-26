@@ -50,20 +50,20 @@ const tabs = projects.map(project => ({
   title: project.name,
   value: project.name,
   content: (
-    <div className="w-full h-[60vh] mt-3 sm:mt-12 relative overflow-hidden rounded-2xl p-10 sm:p-10 text-sm md:text-2xl font-bold text-white bg-gradient-to-br from-amber-300 to-amber-700">
+    <div className="w-full h-[60vh] mt-1 relative overflow-hidden rounded-2xl p-10 sm:p-10 text-sm md:text-2xl font-bold text-white bg-gradient-to-br from-amber-300 to-amber-700">
       <div className="flex items-start justify-start flex-col sm:flex-row">
       <Image
       src={project.image}
       alt={project.name}
       width= {1000}
       height= {1000}
-      className="w-16 h-16 md:w-32 md:h-32"
+      className="w-16 h-16 md:w-32 md:h-32 object-contain"
        />
-      <p className="ps-0 md:ps-4 whitespace-nowrap overflow-hidden overflow-ellipsis pt-1 md:pt-8 underline">{project.name}</p>
+      <Link href={project.route}><p className="ps-0 md:ps-4 whitespace-nowrap overflow-hidden overflow-ellipsis pt-1 md:pt-8 underline">{project.name}</p></Link>
      
       
        </div>
-      <Link href={project.route}><Button size="sm" className="bg-zinc-600 hover:bg-zinc-500 absolute left-1 sm:relative text-zinc-200">View {project.name}</Button></Link> 
+      <Link href={project.route}><Button size="sm" className="bg-zinc-600 mt-3 sm:mt-0 hover:bg-zinc-500 absolute left-2 sm:left-1 w-[160px] sm:max-w-full sm:relative text-zinc-200">View {project.name}</Button></Link> 
        <div className="flex flex-col md:flex-row">
         <div className="w-2/4 ps-4 text-sm absolute right-2 top-2 md:relative">{project.description}</div>
         <div className="w-[400px] md:w-2/4 md:pt-0 md:relative absolute bottom-8 left-0 ">
@@ -93,7 +93,7 @@ const ProjectsDisplay = () => {
           </Link>
 
       </div>
-      <div className="[perspective:1000px] pb-72 md:pb-80 lg:pb-96 relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start mt-10">
+      <div className="[perspective:1000px] pb-72 md:pb-80 lg:pb-96 relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start">
       <Tabs tabs={tabs} />
     </div>
       

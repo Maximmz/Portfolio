@@ -136,7 +136,7 @@ export default function Project() {
 
               </div>
               <Link href={`/projects/${item.slug}`}>
-             <h2 className= "bg-amber-300 text-black font-bold border-4 rounded-full px-2 text-xl w-fit pt-1 mb-4 hover:scale-105 hover:border-rounded">
+             <h2 className= "bg-amber-300 text-black font-bold border-2 rounded-full px-2 text-xl w-fit pt-1 mb-4 active:scale-95 hover:border-rounded">
               View {item.slug}
             </h2>
             <div className="w-full h-2 mb-1 bg-zinc-400 -translate-y-3 rounded-full cursor-default hover:cursor-default"></div>

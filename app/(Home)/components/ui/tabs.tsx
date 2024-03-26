@@ -40,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full",
           containerClassName
         )}
       >
@@ -79,7 +79,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-20 md:mt-12", contentClassName)}
+        className={cn("mt-12 md:mt-10", contentClassName)}
       />
     </>
   );
@@ -107,9 +107,9 @@ export const FadeInDiv = ({
           layoutId={tab.value}
           style={{
             scale: 1 - idx * 0.1,
-            top: hovering ? idx * -50 : 0,
+            top: hovering ? idx * -25 : 0,
             zIndex: -idx,
-            opacity: idx < 3 ? 1 - idx * 0.1 : 0,
+            opacity: idx < 3 ? 1 - idx * 0.15 : 0,
           }}
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
