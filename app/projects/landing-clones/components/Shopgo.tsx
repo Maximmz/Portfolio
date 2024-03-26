@@ -35,20 +35,21 @@ export default function NextCar() {
         </a>
         
       
-      <div className="flex flex-col items-center">
-        <Carousel className="w-full lg:w-[80vh] h-[50vh] relative">
+        <div className="flex flex-col items-center">
+        <Carousel className="w-full h-[400px] relative mb-8 mt-4">
           <CarouselContent className="relative">
             {Array.from({ length: 2 }).map((_, index) => (
               <CarouselItem key={index}>
-                <div className="p-1">
+                <div className="p-1 ">
                   <Card>
-                    <CardContent className="flex aspect-video items-center justify-center p-0">
+                    <CardContent className="flex h-[400px] items-center justify-center p-0">
                       <Image
                         src={getImageForIndex(index)}
                         alt={`Image ${index + 1}`}
                         width={1000}
                         height={500}
                         loading="lazy"
+                        className="h-[400px] object-cover"
                       />
                     </CardContent>
                   </Card>

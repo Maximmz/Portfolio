@@ -41,20 +41,21 @@ export default function NextDashb() {
         </a>
         
       
-      <div className="flex flex-col items-center">
-        <Carousel className="w-full lg:w-[80vh] h-[50vh] relative">
+        <div className="flex flex-col items-center">
+        <Carousel className="w-full h-[400px] relative mb-8 mt-4">
           <CarouselContent className="relative">
             {Array.from({ length: 5 }).map((_, index) => (
               <CarouselItem key={index}>
-                <div className="p-1">
+                <div className="p-1 ">
                   <Card>
-                    <CardContent className="flex aspect-video items-center justify-center p-0">
+                    <CardContent className="flex h-[400px] items-center justify-center p-0">
                       <Image
                         src={getImageForIndex(index)}
                         alt={`Image ${index + 1}`}
                         width={1000}
                         height={500}
                         loading="lazy"
+                        className="h-[400px] object-cover"
                       />
                     </CardContent>
                   </Card>
@@ -82,7 +83,7 @@ export default function NextDashb() {
         MongoDB serves as the database management system, efficiently storing and managing vast amounts of destination information, user data, and booking details.
          The administrative dashboard, accessible to authorized users, offers comprehensive insights and management tools to monitor bookings, track user interactions, and manage content.
     </p>
-    <div className="flex justify-between">
+    <div className="flex flex-col sm:flex-row items-center justify-between">
     <a target="_blank" className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl pb-4" href="https://github.com/Maximmz/NextTrip-Dashboard" rel="https://github.com/Maximmz/NextTrip-Dashboard">
     <Button borderRadius="1.75rem" className="bg-amber-300 text-black text-lg font-bold border-4 border-neutral-200 dark:border-zinc-800">
        <span>Dashboard Repository</span>
