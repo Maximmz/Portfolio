@@ -10,11 +10,12 @@ export default function Services() {
         My Services
       </h1>
   <div className="flex flex-col xl:flex-row justify-center items-center pb-20">
-   <div className="max-w-md max-h-[570px] xl:h-[700px] rounded overflow-hidden bg-amber-300 dark:bg-amber-300 mx-5 gap-y-10 mb-5 ">
+   <div className="max-w-md max-h-[570px] xl:h-[700px] rounded overflow-hidden bg-amber-300 mx-5 gap-y-10 mb-5 ">
    <Image
       src="https://res.cloudinary.com/dvvcrxzud/image/upload/v1709814503/Frontend_gp4yhe.jpg"
       width={1200}
       height={500}
+      loading="lazy"
       style= {{
         maxWidth:'100%',
         height: 'auto',
@@ -34,6 +35,7 @@ export default function Services() {
       src="https://res.cloudinary.com/dvvcrxzud/image/upload/v1709814503/Backend_o7olk7.jpg"
       width={1200}
       height={500}
+      loading="lazy"
       style= {{
         maxWidth:'100%',
         height: 'auto',

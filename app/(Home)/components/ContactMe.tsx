@@ -42,7 +42,7 @@ const ContactMe = () => {
         </div>
       </div>
       <div className="w-6/12">
-        <Image
+      <Image
           src="https://res.cloudinary.com/dvvcrxzud/image/upload/v1710603391/Contact_q4bzal.jpg"
           width={500}
           height={500}

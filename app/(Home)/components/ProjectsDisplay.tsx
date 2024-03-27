@@ -1,8 +1,6 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import { Badge } from "@/components/ui/badge"
-import { FaArrowRight } from "react-icons/fa";
 import { Button } from '@/components/ui/button';
 import Image from "next/image";
 import { Tabs } from "./ui/tabs";
@@ -32,7 +30,7 @@ const projects: Project[] = [
     id:2,
     name: "Landing Clones",
     image: "https://res.cloudinary.com/dvvcrxzud/image/upload/v1710357310/CIS_rpgmvz.png",
-    description: "CISPL & SHOPGO Landing Page Clones: Faithful recreations of professional & stylish websites. HTML & Bootstrap used for immersive user experiences.",
+    description: "Landing Page Clones: Faithful recreations of professional & stylish websites. HTML & Bootstrap used for immersive user experiences.",
     works: "https://res.cloudinary.com/dvvcrxzud/image/upload/v1709899648/Cis1_cbgpcw.jpg",
     route: "projects/landing-clones",
   },
@@ -57,6 +55,7 @@ const tabs = projects.map(project => ({
       alt={project.name}
       width= {1000}
       height= {1000}
+      loading= "lazy"
       className="w-16 h-16 md:w-32 md:h-32 object-contain"
        />
       <Link href={project.route}><p className="ps-0 md:ps-4 whitespace-nowrap overflow-hidden overflow-ellipsis pt-1 md:pt-8 underline">{project.name}</p></Link>
@@ -65,7 +64,7 @@ const tabs = projects.map(project => ({
        </div>
       <Link href={project.route}><Button size="sm" className="bg-zinc-600 mt-3 sm:mt-0 hover:bg-zinc-500 absolute left-2 sm:left-1 w-[160px] sm:max-w-full sm:relative text-zinc-200">View {project.name}</Button></Link> 
        <div className="flex flex-col md:flex-row">
-        <div className="w-2/4 ps-4 text-sm absolute right-2 top-2 md:relative">{project.description}</div>
+        <div className="w-2/4 ps-4 text-sm absolute right-1 top-3 md:relative">{project.description}</div>
         <div className="w-[400px] md:w-2/4 md:pt-0 md:relative absolute bottom-8 left-0 ">
           <Image 
           src={project.works}
